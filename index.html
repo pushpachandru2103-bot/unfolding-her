@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unfolding Her | Grow Gently</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #fffaf7;
+            color: #513d43;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 22px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #f0e1df;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #a65f78;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #684b55;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 85px 20px 75px;
+            background: linear-gradient(#f9e8e9, #fffaf7);
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 11px;
+            color: #a65f78;
+        }
+
+        h1 {
+            font-size: clamp(42px, 8vw, 68px);
+            line-height: 1.15;
+            font-weight: normal;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            max-width: 470px;
+            margin: 0 auto 28px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #a65f78;
+            color: white;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 65px 7%;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 34px;
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #806c71;
+            margin-bottom: 30px;
+        }
+
+        .book {
+            max-width: 380px;
+            margin: 25px auto 0;
+            padding: 28px;
+            background: white;
+            border: 1px solid #f0dedf;
+            border-radius: 12px;
+        }
+
+        .book-cover {
+            background: #f1dadd;
+            padding: 45px 18px;
+            min-height: 230px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #714957;
+            margin-bottom: 22px;
+        }
+
+        .book-cover small {
+            letter-spacing: 3px;
+            font-size: 10px;
+        }
+
+        .book-cover strong {
+            font-size: 31px;
+            line-height: 1.2;
+            margin: 20px 0;
+            font-weight: normal;
+        }
+
+        .price {
+            font-size: 28px;
+            margin: 12px 0;
+        }
+
+        .note {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: #806c71;
+            margin-top: 12px;
+        }
+
+        .about {
+            background: #f9eeee;
+        }
+
+        footer {
+            text-align: center;
+            padding: 28px 15px;
+            font-size: 13px;
+            color: #806c71;
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Unfolding Her 🌷</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#books">My E-book</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="eyebrow">A little space for you</div>
+
+            <h1>Become her,<br>gently.</h1>
+
+            <p>
+                A peaceful corner for self-love, personal growth
+                and becoming the woman you want to be.
+            </p>
+
+            <a class="button" href="#books">Explore the e-book</a>
+        </section>
+
+        <section id="books">
+            <div class="eyebrow">Your first digital guide</div>
+
+            <h2>A book for your becoming</h2>
+
+            <p class="subtitle">
+                Take a breath. Come back to yourself.
+            </p>
+
+            <div class="book">
+                <div class="book-cover">
+                    <small>UNFOLDING HER</small>
+                    <strong>Coming Back<br>to Yourself</strong>
+                    <span>A gentle guide to finding you again</span>
+                </div>
+
+                <h3>Coming Back to Yourself</h3>
+
+                <p>
+                    A gentle guide to self-love, boundaries,
+                    reflection and small daily changes.
+                </p>
+
+                <div class="price">₹49</div>
+
+                <button class="button" onclick="purchaseMessage()">
+                    Get the e-book
+                </button>
+
+                <p class="note">
+                    Digital e-book · Secure payment setup pending
+                </p>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Welcome to your quiet corner ♡</h2>
+
+            <p>
+                Unfolding Her is a little reminder that you don't
+                have to change everything overnight. You can grow
+                at your own pace, one gentle step at a time.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Unfolding Her 🌷
+        <p>Made with care, for your becoming.</p>
+    </footer>
+
+    <script>
+        function purchaseMessage() {
+            alert(
+                "Thank you for your interest! Online payment " +
+                "is not connected yet. Please come back soon."
+            );
+        }
+    </script>
+
+</body>
+</html>
